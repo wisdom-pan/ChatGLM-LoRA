@@ -1,0 +1,506 @@
+2023-07-15 21:10:13,494 INFO    StreamThr :851 [internal.py:wandb_internal():86] W&B internal server running at pid: 851, started at: 2023-07-15 21:10:13.491076
+2023-07-15 21:10:13,496 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status
+2023-07-15 21:10:13,502 INFO    WriterThread:851 [datastore.py:open_for_write():85] open: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/run-9xns9u8c.wandb
+2023-07-15 21:10:13,506 DEBUG   SenderThread:851 [sender.py:send():375] send: header
+2023-07-15 21:10:13,506 DEBUG   SenderThread:851 [sender.py:send():375] send: run
+2023-07-15 21:10:14,650 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: check_version
+2023-07-15 21:10:14,652 INFO    SenderThread:851 [dir_watcher.py:__init__():219] watching files in: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files
+2023-07-15 21:10:14,652 INFO    SenderThread:851 [sender.py:_start_run_threads():1124] run started: 9xns9u8c with start time 1689426613.500518
+2023-07-15 21:10:14,652 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: summary_record
+2023-07-15 21:10:14,657 INFO    SenderThread:851 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-15 21:10:14,658 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: check_version
+2023-07-15 21:10:15,660 INFO    Thread-12 :851 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/wandb-summary.json
+2023-07-15 21:10:15,666 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: run_start
+2023-07-15 21:10:15,670 DEBUG   HandlerThread:851 [system_info.py:__init__():31] System info init
+2023-07-15 21:10:15,670 DEBUG   HandlerThread:851 [system_info.py:__init__():46] System info init done
+2023-07-15 21:10:15,670 INFO    HandlerThread:851 [system_monitor.py:start():181] Starting system monitor
+2023-07-15 21:10:15,670 INFO    SystemMonitor:851 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-15 21:10:15,671 INFO    HandlerThread:851 [system_monitor.py:probe():201] Collecting system info
+2023-07-15 21:10:15,671 INFO    SystemMonitor:851 [interfaces.py:start():190] Started cpu monitoring
+2023-07-15 21:10:15,673 INFO    SystemMonitor:851 [interfaces.py:start():190] Started disk monitoring
+2023-07-15 21:10:15,674 INFO    SystemMonitor:851 [interfaces.py:start():190] Started gpu monitoring
+2023-07-15 21:10:15,675 INFO    SystemMonitor:851 [interfaces.py:start():190] Started memory monitoring
+2023-07-15 21:10:15,676 INFO    SystemMonitor:851 [interfaces.py:start():190] Started network monitoring
+2023-07-15 21:10:15,686 DEBUG   HandlerThread:851 [system_info.py:probe():195] Probing system
+2023-07-15 21:10:15,692 DEBUG   HandlerThread:851 [git.py:repo():40] git repository is invalid
+2023-07-15 21:10:15,692 DEBUG   HandlerThread:851 [system_info.py:probe():240] Probing system done
+2023-07-15 21:10:15,692 DEBUG   HandlerThread:851 [system_monitor.py:probe():210] {'os': 'Linux-4.19.126-1.jdcloud.x86_64-x86_64-with-glibc2.31', 'python': '3.11.3', 'heartbeatAt': '2023-07-15T13:10:15.686856', 'startedAt': '2023-07-15T13:10:13.442150', 'docker': None, 'cuda': None, 'args': ('--train_args_json', 'chatGLM_6B_QLoRA.json', '--train_data_path', 'data/train.jsonl', '--eval_data_path', 'data/dev.jsonl', '--lora_rank', '4', '--lora_dropout', '0.05', '--compute_dtype', 'fp32'), 'state': 'running', 'program': '/home/gouxiaopan1/chatGLM-6B-QLoRA-main/train_qlora.py', 'codePath': 'train_qlora.py', 'host': 'notebook-gouxiaopan1-chatglm2-lora-l7ql-0', 'username': 'gouxiaopan1', 'executable': '/opt/conda/envs/main/bin/python3', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2199.9959999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}, {'current': 2199.996, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 492.0265922546387, 'used': 385.9421920776367}, 'gpu': 'Tesla V100-PCIE-16GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-16GB', 'memory_total': 16945512448}], 'memory': {'total': 216.2166290283203}}
+2023-07-15 21:10:15,692 INFO    HandlerThread:851 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-15 21:10:15,692 INFO    HandlerThread:851 [system_monitor.py:probe():214] Publishing system info
+2023-07-15 21:10:15,692 DEBUG   HandlerThread:851 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-15 21:10:15,701 DEBUG   HandlerThread:851 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-15 21:10:15,701 DEBUG   HandlerThread:851 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-15 21:10:16,660 INFO    Thread-12 :851 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/requirements.txt
+2023-07-15 21:10:16,660 INFO    Thread-12 :851 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/conda-environment.yaml
+2023-07-15 21:10:20,237 DEBUG   HandlerThread:851 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-15 21:10:20,251 INFO    HandlerThread:851 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-15 21:10:20,285 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:20,286 DEBUG   SenderThread:851 [sender.py:send():375] send: files
+2023-07-15 21:10:20,286 INFO    SenderThread:851 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-07-15 21:10:20,298 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:10:20,298 DEBUG   SenderThread:851 [sender.py:send():375] send: telemetry
+2023-07-15 21:10:20,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:10:20,664 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/conda-environment.yaml
+2023-07-15 21:10:20,665 INFO    Thread-12 :851 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/wandb-metadata.json
+2023-07-15 21:10:21,084 DEBUG   SenderThread:851 [sender.py:send():375] send: config
+2023-07-15 21:10:21,086 DEBUG   SenderThread:851 [sender.py:send():375] send: metric
+2023-07-15 21:10:21,086 DEBUG   SenderThread:851 [sender.py:send():375] send: telemetry
+2023-07-15 21:10:21,086 DEBUG   SenderThread:851 [sender.py:send():375] send: metric
+2023-07-15 21:10:21,086 WARNING SenderThread:851 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-07-15 21:10:21,666 INFO    Thread-12 :851 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:10:21,690 INFO    wandb-upload_0:851 [upload_job.py:push():137] Uploaded file /tmp/tmpvp4gixliwandb/3mletyhe-wandb-metadata.json
+2023-07-15 21:10:23,671 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:10:24,092 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:29,093 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:34,094 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:35,296 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:10:35,297 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:10:39,678 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:44,682 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:45,695 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/config.yaml
+2023-07-15 21:10:50,296 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:10:50,297 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:10:50,567 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:10:55,712 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:10:56,432 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:01,433 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:05,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:11:05,297 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:11:06,578 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:11,579 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:15,676 DEBUG   SystemMonitor:851 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-15 21:11:15,677 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:11:16,678 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:20,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:11:20,297 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:11:22,615 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:27,616 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:29,752 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:11:33,252 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:35,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:11:35,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:11:38,616 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:43,617 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:45,678 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:11:48,679 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:50,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:11:50,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:11:54,570 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:11:59,571 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:03,789 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:12:04,852 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:05,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:12:05,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:12:10,558 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:15,559 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:15,679 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:12:20,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:12:20,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:12:20,583 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:25,584 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:30,585 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:33,817 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:12:35,297 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:12:35,298 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:12:35,598 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:40,599 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:45,600 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:45,680 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:12:50,298 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:12:50,299 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:12:51,547 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:12:56,548 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:01,549 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:05,298 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:13:05,299 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:13:05,848 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:13:06,577 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:11,578 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:15,681 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:13:16,682 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:20,298 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:13:20,299 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:13:22,570 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:27,571 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:32,572 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:35,298 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:13:35,299 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:13:37,878 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:13:38,510 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:43,511 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:45,682 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:13:48,684 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:50,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:13:50,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:13:54,605 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:13:59,606 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:04,607 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:05,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:14:05,299 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:14:09,910 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:14:10,228 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:15,229 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:15,683 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:14:20,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:14:20,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:14:20,608 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:25,609 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:30,610 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:35,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:14:35,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:14:36,566 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:41,939 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:14:42,239 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:45,684 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:14:47,685 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:50,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:14:50,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:14:53,593 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:14:58,594 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:03,594 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:05,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:15:05,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:15:08,620 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:13,621 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:15,685 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:15:15,974 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:15:18,686 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:20,299 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:15:20,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:15:24,586 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:29,587 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:34,588 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:35,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:15:35,300 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:15:40,558 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:45,559 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:45,686 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:15:48,008 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:15:50,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:15:50,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:15:50,604 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:15:55,605 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:00,606 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:05,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:16:05,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:16:06,561 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:11,562 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:15,687 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:16:16,046 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:16:16,688 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:20,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:16:20,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:16:22,686 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:27,687 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:32,688 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:35,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:16:35,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:16:37,944 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:42,945 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:45,688 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:16:48,076 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:16:48,729 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:50,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:16:50,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:16:53,741 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:16:58,742 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:03,742 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:05,301 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:17:05,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:17:08,922 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:13,923 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:15,689 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:17:19,679 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:20,107 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:17:20,301 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:17:20,301 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:17:25,607 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:30,608 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:35,301 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:17:35,302 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:17:36,607 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:41,608 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:45,690 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:17:46,691 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:50,133 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:17:50,301 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:17:50,302 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:17:52,583 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:17:57,585 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:02,586 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:05,301 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:18:05,302 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:18:08,562 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:13,563 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:15,697 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:18:18,698 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:20,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:18:20,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:18:24,129 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:24,169 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:18:29,130 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:34,131 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:35,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:18:35,302 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:18:39,573 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:44,574 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:45,691 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:18:49,693 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:50,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:18:50,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:18:52,194 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:18:54,730 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:18:59,731 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:04,732 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:05,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:19:05,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:19:10,620 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:15,621 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:15,692 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:19:20,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:19:20,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:19:21,601 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:26,232 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:19:27,393 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:32,394 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:35,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:19:35,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:19:37,587 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:42,588 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:45,693 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:19:47,695 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:50,302 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:19:50,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:19:53,603 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:19:59,325 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:00,264 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:20:04,326 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:05,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:20:05,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:20:09,584 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:14,585 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:15,694 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:20:19,696 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:20,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:20:20,303 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:20:25,590 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:27,292 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:20:30,839 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:35,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:20:35,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:20:36,579 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:41,580 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:45,695 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:20:46,696 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:50,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:20:50,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:20:52,603 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:20:57,604 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:01,323 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:21:03,424 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:05,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:21:05,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:21:08,572 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:13,573 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:15,696 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:21:18,697 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:20,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:21:20,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:21:24,577 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:29,578 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:33,361 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:21:35,300 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:35,303 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:21:35,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:21:40,597 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:45,598 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:45,697 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:21:50,304 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:21:50,304 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:21:51,542 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:21:56,543 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:01,544 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:03,394 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:22:05,304 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:22:05,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:22:06,554 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:11,555 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:15,698 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:22:16,699 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:20,304 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:22:20,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:22:22,690 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:27,691 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:32,692 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:35,304 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:22:35,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:22:35,431 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:22:38,643 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:43,644 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:45,699 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:22:48,700 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:50,304 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:22:50,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:22:53,730 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:22:58,731 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:03,732 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:05,305 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:23:05,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:23:07,476 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:23:08,866 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:13,867 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:15,700 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:23:19,701 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:20,305 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:23:20,305 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:23:25,554 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:30,554 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:35,305 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:23:35,306 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:23:35,612 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:37,507 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:23:40,653 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:45,654 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:45,701 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:23:50,305 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:23:50,306 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:23:51,568 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:23:56,569 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:01,570 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:05,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:24:05,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:24:06,672 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:09,541 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:24:12,040 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:15,702 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:24:17,703 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:20,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:24:20,306 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:24:22,724 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:27,725 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:32,726 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:35,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:24:35,306 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:24:38,601 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:41,572 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:24:44,120 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:45,703 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:24:49,704 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:24:50,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:24:50,306 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:24:55,686 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:00,686 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:05,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:25:05,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:25:06,604 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:11,605 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:15,606 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:25:15,704 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:25:16,705 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:20,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:25:20,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:25:22,546 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:27,547 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:32,548 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:35,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:25:35,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:25:37,616 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:42,616 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:45,705 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:25:47,635 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:25:48,607 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:50,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:25:50,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:25:53,627 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:25:58,628 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:03,629 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:05,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:26:05,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:26:09,614 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:14,615 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:15,706 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:26:19,667 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:26:19,918 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:20,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:26:20,307 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:26:25,607 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:30,608 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:35,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:26:35,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:26:36,569 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:41,570 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:45,707 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:26:46,708 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:50,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:26:50,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:26:52,306 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:26:53,703 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:26:57,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:02,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:05,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:27:05,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:27:07,556 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:12,557 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:15,711 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:27:17,712 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:20,307 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:27:20,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:27:23,573 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:25,734 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:27:28,796 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:33,797 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:35,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:27:35,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:27:39,564 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:44,565 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:45,709 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:27:49,710 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:50,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:27:50,308 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:27:55,085 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:27:55,762 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:28:00,086 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:05,087 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:05,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:28:05,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:28:10,582 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:15,584 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:15,710 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:28:20,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:28:20,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:28:20,588 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:25,790 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:28:26,346 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:31,347 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:35,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:28:35,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:28:36,915 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:41,916 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:45,711 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:28:47,712 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:50,308 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:28:50,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:28:53,577 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:28:57,820 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:28:58,894 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:03,895 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:05,309 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:29:05,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:29:09,628 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:14,629 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:15,711 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:29:19,713 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:20,309 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:29:20,309 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:29:25,612 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:27,856 INFO    Thread-12 :851 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230715_211013-9xns9u8c/files/output.log
+2023-07-15 21:29:30,897 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:35,309 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:29:35,310 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:29:36,595 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:41,596 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:45,712 DEBUG   SenderThread:851 [sender.py:send():375] send: stats
+2023-07-15 21:29:46,713 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 21:29:50,309 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 21:29:50,310 DEBUG   SenderThread:851 [sender.py:send_request():402] send_request: stop_status
+2023-07-15 21:29:52,606 DEBUG   HandlerThread:851 [handler.py:handle_request():144] handle_request: status_report

@@ -1,0 +1,205 @@
+2023-07-18 11:50:42,915 INFO    StreamThr :619 [internal.py:wandb_internal():86] W&B internal server running at pid: 619, started at: 2023-07-18 11:50:42.912965
+2023-07-18 11:50:42,916 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status
+2023-07-18 11:50:42,918 INFO    WriterThread:619 [datastore.py:open_for_write():85] open: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/run-pfeg6n2w.wandb
+2023-07-18 11:50:42,921 DEBUG   SenderThread:619 [sender.py:send():375] send: header
+2023-07-18 11:50:42,921 DEBUG   SenderThread:619 [sender.py:send():375] send: run
+2023-07-18 11:50:43,979 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: check_version
+2023-07-18 11:50:43,979 INFO    SenderThread:619 [dir_watcher.py:__init__():219] watching files in: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files
+2023-07-18 11:50:43,979 INFO    SenderThread:619 [sender.py:_start_run_threads():1124] run started: pfeg6n2w with start time 1689652242.915198
+2023-07-18 11:50:43,979 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: summary_record
+2023-07-18 11:50:43,984 INFO    SenderThread:619 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-18 11:50:43,985 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: check_version
+2023-07-18 11:50:44,982 INFO    Thread-12 :619 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-summary.json
+2023-07-18 11:50:48,980 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-18 11:50:48,986 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:50:49,055 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: run_start
+2023-07-18 11:50:49,060 DEBUG   HandlerThread:619 [system_info.py:__init__():31] System info init
+2023-07-18 11:50:49,060 DEBUG   HandlerThread:619 [system_info.py:__init__():46] System info init done
+2023-07-18 11:50:49,060 INFO    HandlerThread:619 [system_monitor.py:start():181] Starting system monitor
+2023-07-18 11:50:49,061 INFO    SystemMonitor:619 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-18 11:50:49,061 INFO    HandlerThread:619 [system_monitor.py:probe():201] Collecting system info
+2023-07-18 11:50:49,063 INFO    SystemMonitor:619 [interfaces.py:start():190] Started cpu monitoring
+2023-07-18 11:50:49,063 INFO    SystemMonitor:619 [interfaces.py:start():190] Started disk monitoring
+2023-07-18 11:50:49,069 INFO    SystemMonitor:619 [interfaces.py:start():190] Started gpu monitoring
+2023-07-18 11:50:49,076 INFO    SystemMonitor:619 [interfaces.py:start():190] Started memory monitoring
+2023-07-18 11:50:49,082 INFO    SystemMonitor:619 [interfaces.py:start():190] Started network monitoring
+2023-07-18 11:50:49,111 DEBUG   HandlerThread:619 [system_info.py:probe():195] Probing system
+2023-07-18 11:50:49,117 DEBUG   HandlerThread:619 [git.py:repo():40] git repository is invalid
+2023-07-18 11:50:49,118 DEBUG   HandlerThread:619 [system_info.py:probe():240] Probing system done
+2023-07-18 11:50:49,118 DEBUG   HandlerThread:619 [system_monitor.py:probe():210] {'os': 'Linux-4.19.126-1.jdcloud.x86_64-x86_64-with-glibc2.31', 'python': '3.11.3', 'heartbeatAt': '2023-07-18T03:50:49.111422', 'startedAt': '2023-07-18T03:50:42.856411', 'docker': None, 'cuda': None, 'args': ('--train_args_json', 'chatGLM_6B_QLoRA.json', '--train_data_path', 'dataset/train.json', '--eval_data_path', 'dataset/test.json', '--lora_rank', '8', '--lora_dropout', '0.05', '--compute_dtype', 'fp32'), 'state': 'running', 'program': '/home/gouxiaopan1/chatGLM-6B-QLoRA-main/train_qlora.py', 'codePath': 'train_qlora.py', 'host': 'notebook-gouxiaopan1-chatglm2-lora-l7ql-0', 'username': 'gouxiaopan1', 'executable': '/opt/conda/envs/main/bin/python3', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2199.998000000002, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 492.0265922546387, 'used': 316.84247970581055}, 'gpu': 'Tesla V100-PCIE-16GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-16GB', 'memory_total': 16945512448}], 'memory': {'total': 216.2166290283203}}
+2023-07-18 11:50:49,118 INFO    HandlerThread:619 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-18 11:50:49,118 INFO    HandlerThread:619 [system_monitor.py:probe():214] Publishing system info
+2023-07-18 11:50:49,118 DEBUG   HandlerThread:619 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-18 11:50:49,127 DEBUG   HandlerThread:619 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-18 11:50:49,127 DEBUG   HandlerThread:619 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-18 11:50:50,009 INFO    Thread-12 :619 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/requirements.txt
+2023-07-18 11:50:50,010 INFO    Thread-12 :619 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/conda-environment.yaml
+2023-07-18 11:50:54,160 DEBUG   HandlerThread:619 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-18 11:50:54,166 INFO    HandlerThread:619 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-18 11:50:54,195 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:50:54,195 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-18 11:50:54,196 DEBUG   SenderThread:619 [sender.py:send():375] send: files
+2023-07-18 11:50:54,196 INFO    SenderThread:619 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-07-18 11:50:54,207 DEBUG   SenderThread:619 [sender.py:send():375] send: telemetry
+2023-07-18 11:50:54,207 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:50:54,208 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: stop_status
+2023-07-18 11:50:54,945 DEBUG   SenderThread:619 [sender.py:send():375] send: config
+2023-07-18 11:50:54,946 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:50:54,946 DEBUG   SenderThread:619 [sender.py:send():375] send: telemetry
+2023-07-18 11:50:54,946 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:50:54,947 WARNING SenderThread:619 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-07-18 11:50:55,014 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/conda-environment.yaml
+2023-07-18 11:50:55,015 INFO    Thread-12 :619 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-metadata.json
+2023-07-18 11:50:55,015 INFO    Thread-12 :619 [dir_watcher.py:_on_file_created():278] file/dir created: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:50:55,056 INFO    wandb-upload_0:619 [upload_job.py:push():137] Uploaded file /tmp/tmpy69dnhwzwandb/lsuy1nsk-wandb-metadata.json
+2023-07-18 11:50:57,028 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:50:59,954 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:04,955 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:09,208 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-18 11:51:09,209 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: stop_status
+2023-07-18 11:51:10,439 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:15,444 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:16,048 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/config.yaml
+2023-07-18 11:51:21,041 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:22,415 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: metric
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send():375] send: history
+2023-07-18 11:51:22,418 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: summary_record
+2023-07-18 11:51:22,444 INFO    SenderThread:619 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-18 11:51:22,546 DEBUG   SenderThread:619 [sender.py:send():375] send: exit
+2023-07-18 11:51:22,546 INFO    SenderThread:619 [sender.py:send_exit():598] handling exit code: 0
+2023-07-18 11:51:22,546 INFO    SenderThread:619 [sender.py:send_exit():600] handling runtime: 33
+2023-07-18 11:51:22,564 INFO    SenderThread:619 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-18 11:51:22,564 INFO    SenderThread:619 [sender.py:send_exit():606] send defer
+2023-07-18 11:51:22,565 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,565 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-18 11:51:22,565 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,565 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-07-18 11:51:22,565 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 1
+2023-07-18 11:51:22,565 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,565 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-18 11:51:22,566 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,566 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-07-18 11:51:22,566 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 2
+2023-07-18 11:51:22,566 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,566 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-18 11:51:22,566 INFO    HandlerThread:619 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-18 11:51:22,566 DEBUG   SystemMonitor:619 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-18 11:51:22,567 INFO    HandlerThread:619 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-18 11:51:22,567 DEBUG   SystemMonitor:619 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-18 11:51:22,568 INFO    HandlerThread:619 [interfaces.py:finish():202] Joined disk monitor
+2023-07-18 11:51:22,568 DEBUG   SystemMonitor:619 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-18 11:51:22,580 INFO    HandlerThread:619 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-18 11:51:22,580 INFO    HandlerThread:619 [interfaces.py:finish():202] Joined memory monitor
+2023-07-18 11:51:22,580 INFO    HandlerThread:619 [interfaces.py:finish():202] Joined network monitor
+2023-07-18 11:51:22,581 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,581 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-07-18 11:51:22,581 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 3
+2023-07-18 11:51:22,581 DEBUG   SenderThread:619 [sender.py:send():375] send: stats
+2023-07-18 11:51:22,581 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,582 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-18 11:51:22,582 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,582 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-07-18 11:51:22,582 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 4
+2023-07-18 11:51:22,582 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,582 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-18 11:51:22,583 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,583 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-07-18 11:51:22,583 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 5
+2023-07-18 11:51:22,583 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,583 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-18 11:51:22,583 DEBUG   SenderThread:619 [sender.py:send():375] send: summary
+2023-07-18 11:51:22,592 INFO    SenderThread:619 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-18 11:51:22,593 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,593 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-07-18 11:51:22,593 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 6
+2023-07-18 11:51:22,593 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:22,593 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-18 11:51:22,593 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:22,593 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-07-18 11:51:22,599 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: status_report
+2023-07-18 11:51:23,059 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-summary.json
+2023-07-18 11:51:23,059 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:51:23,248 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 7
+2023-07-18 11:51:23,249 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:23,249 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-18 11:51:23,249 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:23,249 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-07-18 11:51:23,546 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-18 11:51:24,060 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/config.yaml
+2023-07-18 11:51:25,069 INFO    Thread-12 :619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:51:26,452 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 8
+2023-07-18 11:51:26,452 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: poll_exit
+2023-07-18 11:51:26,452 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:26,453 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-18 11:51:26,453 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:26,453 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-07-18 11:51:26,454 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 9
+2023-07-18 11:51:26,454 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:26,454 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-18 11:51:26,455 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:26,455 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-07-18 11:51:26,455 INFO    SenderThread:619 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-07-18 11:51:27,071 INFO    SenderThread:619 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:51:27,071 INFO    SenderThread:619 [dir_watcher.py:finish():395] scan: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files
+2023-07-18 11:51:27,072 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/config.yaml config.yaml
+2023-07-18 11:51:27,072 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-summary.json wandb-summary.json
+2023-07-18 11:51:27,076 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/requirements.txt requirements.txt
+2023-07-18 11:51:27,077 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/conda-environment.yaml conda-environment.yaml
+2023-07-18 11:51:27,085 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-metadata.json wandb-metadata.json
+2023-07-18 11:51:27,085 INFO    SenderThread:619 [dir_watcher.py:finish():409] scan save: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log output.log
+2023-07-18 11:51:27,089 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 10
+2023-07-18 11:51:27,090 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:27,090 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-18 11:51:27,094 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:27,094 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-07-18 11:51:27,094 INFO    SenderThread:619 [file_pusher.py:finish():167] shutting down file pusher
+2023-07-18 11:51:27,809 INFO    wandb-upload_0:619 [upload_job.py:push():137] Uploaded file /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/config.yaml
+2023-07-18 11:51:27,893 INFO    wandb-upload_1:619 [upload_job.py:push():137] Uploaded file /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/wandb-summary.json
+2023-07-18 11:51:28,319 INFO    wandb-upload_2:619 [upload_job.py:push():137] Uploaded file /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/requirements.txt
+2023-07-18 11:51:28,446 INFO    wandb-upload_4:619 [upload_job.py:push():137] Uploaded file /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/output.log
+2023-07-18 11:51:28,548 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-18 11:51:28,713 INFO    wandb-upload_3:619 [upload_job.py:push():137] Uploaded file /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/files/conda-environment.yaml
+2023-07-18 11:51:28,913 INFO    Thread-11 (_thread_body):619 [sender.py:transition_state():626] send defer: 11
+2023-07-18 11:51:28,914 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:28,914 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-18 11:51:28,915 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:28,915 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-07-18 11:51:28,915 INFO    SenderThread:619 [file_pusher.py:join():172] waiting for file pusher
+2023-07-18 11:51:28,915 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 12
+2023-07-18 11:51:28,915 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:28,915 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-18 11:51:28,915 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:28,915 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-07-18 11:51:29,226 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 13
+2023-07-18 11:51:29,226 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:29,226 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-18 11:51:29,227 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:29,227 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-07-18 11:51:29,227 INFO    SenderThread:619 [sender.py:transition_state():626] send defer: 14
+2023-07-18 11:51:29,227 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: defer
+2023-07-18 11:51:29,227 INFO    HandlerThread:619 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-18 11:51:29,228 DEBUG   SenderThread:619 [sender.py:send():375] send: final
+2023-07-18 11:51:29,228 DEBUG   SenderThread:619 [sender.py:send():375] send: footer
+2023-07-18 11:51:29,228 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: defer
+2023-07-18 11:51:29,228 INFO    SenderThread:619 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-07-18 11:51:29,229 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-18 11:51:29,229 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: poll_exit
+2023-07-18 11:51:29,230 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: server_info
+2023-07-18 11:51:29,230 DEBUG   SenderThread:619 [sender.py:send_request():402] send_request: server_info
+2023-07-18 11:51:29,232 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-18 11:51:29,233 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-18 11:51:29,705 INFO    MainThread:619 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-07-18 11:51:29,705 INFO    MainThread:619 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-07-18 11:51:29,705 INFO    MainThread:619 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-07-18 11:51:29,706 DEBUG   HandlerThread:619 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-18 11:51:29,706 INFO    HandlerThread:619 [handler.py:finish():842] shutting down handler
+2023-07-18 11:51:30,230 INFO    WriterThread:619 [datastore.py:close():298] close: /home/gouxiaopan1/chatGLM-6B-QLoRA-main/wandb/run-20230718_115042-pfeg6n2w/run-pfeg6n2w.wandb
+2023-07-18 11:51:30,704 INFO    SenderThread:619 [sender.py:finish():1550] shutting down sender
+2023-07-18 11:51:30,705 INFO    SenderThread:619 [file_pusher.py:finish():167] shutting down file pusher
+2023-07-18 11:51:30,705 INFO    SenderThread:619 [file_pusher.py:join():172] waiting for file pusher

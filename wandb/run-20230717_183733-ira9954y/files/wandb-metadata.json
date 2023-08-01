@@ -1,0 +1,252 @@
+{
+    "os": "Linux-4.19.126-1.jdcloud.x86_64-x86_64-with-glibc2.31",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-07-17T10:37:36.889055",
+    "startedAt": "2023-07-17T10:37:33.632767",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--train_args_json",
+        "chatGLM_6B_QLoRA.json",
+        "--train_data_path",
+        "dataset/train.json",
+        "--eval_data_path",
+        "dataset/test.json",
+        "--lora_rank",
+        "8",
+        "--lora_dropout",
+        "0.05",
+        "--compute_dtype",
+        "fp32"
+    ],
+    "state": "running",
+    "program": "/home/gouxiaopan1/chatGLM-6B-QLoRA-main/train_qlora.py",
+    "codePath": "train_qlora.py",
+    "host": "notebook-gouxiaopan1-chatglm2-lora-l7ql-0",
+    "username": "gouxiaopan1",
+    "executable": "/opt/conda/envs/main/bin/python3",
+    "cpu_count": 20,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 2199.9959999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.996,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 492.0265922546387,
+        "used": 390.68087005615234
+    },
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-16GB",
+            "memory_total": 16945512448
+        }
+    ],
+    "memory": {
+        "total": 216.2166290283203
+    }
+}
